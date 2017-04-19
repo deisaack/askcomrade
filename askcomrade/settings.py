@@ -15,7 +15,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django.contrib.sites',
     'django.contrib.sitemaps',
 
     'django.contrib.humanize',
@@ -24,10 +23,10 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'allauth.socialaccount.providers.google',
-    'allauth.socialaccount.providers.github',
-    'allauth.socialaccount.providers.facebook',
-    'allauth.socialaccount.providers.linkedin',
+    # 'allauth.socialaccount.providers.google',
+    # 'allauth.socialaccount.providers.github',
+    # 'allauth.socialaccount.providers.facebook',
+    # 'allauth.socialaccount.providers.linkedin',
 
     'haystack',
     'crispy_forms',
@@ -40,13 +39,14 @@ INSTALLED_APPS = [
     'askcomrade.apps.badges',
     'askcomrade.apps.planet',
     'askcomrade.apps.messagez',
-    'askcomrade',
+    # 'askcomrade',
 
     'askcomrade.server',
     'djcelery',
     'kombu.transport.django',
     # 'south',
     'captcha',
+    'django.contrib.sites',
 ]
 
 

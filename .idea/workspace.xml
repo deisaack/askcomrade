@@ -5,6 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fb8087c-79be-432c-a9e4-00d761a37e6b" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/askcomrade/apps/messagez/migrations/0002_auto_20170413_1204.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/askcomrade/apps/posts/migrations/0002_auto_20170413_1204.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/askcomrade/apps/users/migrations/0002_auto_20170413_1402.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/askcomrade/apps/users/migrations/0003_auto_20170413_1446.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/askcomrade/apps/users/migrations/0004_auto_20170413_2352.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/askcomrade/apps/users/migrations/0005_auto_20170414_0100.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askcomrade/apps/badges/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/askcomrade/apps/badges/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askcomrade/apps/badges/migrations/0002_award_user.py" afterPath="$PROJECT_DIR$/askcomrade/apps/badges/migrations/0002_award_user.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askcomrade/apps/messagez/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/askcomrade/apps/messagez/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askcomrade/apps/planet/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/askcomrade/apps/planet/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askcomrade/apps/posts/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/askcomrade/apps/posts/migrations/0001_initial.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askcomrade/apps/users/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/askcomrade/apps/users/migrations/0001_initial.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askcomrade/settings.py" afterPath="$PROJECT_DIR$/askcomrade/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,8 +51,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/askcomrade/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+            <state relative-caret-position="422">
+              <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -1008,8 +1022,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/askcomrade/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+        <state relative-caret-position="422">
+          <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
           <folding />
         </state>
       </provider>
