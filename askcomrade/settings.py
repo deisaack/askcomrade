@@ -4,7 +4,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = 'hsuw-xuy!ny!81ag(g&4q&h$fjj43paqk$(cx#69b5y_ex*wgk'
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1','https://askcomrade.herokuapp.com', '0.0.0.0']
 
