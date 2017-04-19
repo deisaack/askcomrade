@@ -429,7 +429,7 @@ RECAPTCHA_USE_SSL = True  # Defaults to False
 NOCAPTCHA = True
 
 # Use a mock email backend for development.
-# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # On deployed servers the following must be set.
 EMAIL_HOST = 'smtp.gmail.com'
