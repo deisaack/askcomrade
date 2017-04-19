@@ -6,7 +6,7 @@ SECRET_KEY = 'hsuw-xuy!ny!81ag(g&4q&h$fjj43paqk$(cx#69b5y_ex*wgk'
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','https://askcomrade.herokuapp.com']
 
 INSTALLED_APPS = [
     # 'django_admin_bootstrapped',
