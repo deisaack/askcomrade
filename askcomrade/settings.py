@@ -32,6 +32,7 @@ INSTALLED_APPS = [
 
     'haystack',
     'crispy_forms',
+    # 'django_admin_bootstrapped',
 
     # 'compressor',
     # """ Askcomrade specific apps"""
@@ -149,7 +150,7 @@ __DEFAULT_ASKCOMRADE_ADMIN_NAME = "Askcomrade Admin"
 __DEFAULT_ASKCOMRADE_ADMIN_EMAIL = "admin@asks.me"
 __DEFAULT_SECRET_KEY = 'admin@askc.me'
 __DEFAULT_SITE_DOMAIN = 'www.kipkemei.com'
-__DEFAULT_FROM_EMAIL = 'noreply@askc.me'
+__DEFAULT_FROM_EMAIL = 'noreply@askcomrade.com'
 
 SITE_ID = 1
 SITE_NAME = ""
@@ -433,10 +434,10 @@ NOCAPTCHA = True
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # On deployed servers the following must be set.
-EMAIL_HOST = 'admin@lvh.me'
-EMAIL_PORT = '25'
-EMAIL_HOST_USER = 'admin@lvh.me'
-EMAIL_HOST_PASSWORD = 'admin@lvh.me'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = '587'
+EMAIL_HOST_USER = 'deisaack@gmail.com'
+EMAIL_HOST_PASSWORD = 'jacktonejacktone'
 
 DJANGO_SETTINGS_MODULE = 'askcomrade.settings.base'
 
@@ -472,4 +473,10 @@ ORCID_PROVIDER_SECRET_KEY = 'secret'
 # SKIP_SOUTH_TESTS = True
 # SOUTH_DATABASE_ADAPTERS = DATABASES
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
+
+
+
+EMAIL_USE_TLS = True
+
 
