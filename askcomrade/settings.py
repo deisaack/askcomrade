@@ -53,6 +53,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -467,6 +468,8 @@ ORCID_PROVIDER_KEY = 'key'
 ORCID_PROVIDER_SECRET_KEY = 'secret'
 
 # Variable only used during migration from Askcomrade 1.0.
-ASKCOMRADE_MIGRATE_DIR = "~/tmp/askcomrade-migrate"
-SKIP_SOUTH_TESTS = True
-SOUTH_DATABASE_ADAPTERS = DATABASES
+# ASKCOMRADE_MIGRATE_DIR = "~/tmp/askcomrade-migrate"
+# SKIP_SOUTH_TESTS = True
+# SOUTH_DATABASE_ADAPTERS = DATABASES
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+
