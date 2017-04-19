@@ -9,7 +9,6 @@ DEBUG = False
 ALLOWED_HOSTS = ['127.0.0.1','https://askcomrade.herokuapp.com', '0.0.0.0']
 
 INSTALLED_APPS = [
-    # 'django_admin_bootstrapped',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -32,7 +31,6 @@ INSTALLED_APPS = [
 
     'haystack',
     'crispy_forms',
-    # 'django_admin_bootstrapped',
 
     # 'compressor',
     # """ Askcomrade specific apps"""
@@ -431,7 +429,7 @@ RECAPTCHA_USE_SSL = True  # Defaults to False
 NOCAPTCHA = True
 
 # Use a mock email backend for development.
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # On deployed servers the following must be set.
 EMAIL_HOST = 'smtp.gmail.com'
