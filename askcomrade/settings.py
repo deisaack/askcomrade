@@ -447,7 +447,7 @@ EMAIL_PORT = '587'
 EMAIL_HOST_USER = 'deisaack@gmail.com'
 EMAIL_HOST_PASSWORD = 'jacktonejacktone'
 SECURE_SSL_REDIRECT = True
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 DJANGO_SETTINGS_MODULE = 'askcomrade.settings.base'
 
