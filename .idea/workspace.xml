@@ -4,7 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/../15/askcomrade-central/askcomrade/urls.py" description="from askcomrade.server.feeds import LatestFeed, Ta..." line="131" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7fb8087c-79be-432c-a9e4-00d761a37e6b" name="Default" comment="" />
+    <list default="true" id="7fb8087c-79be-432c-a9e4-00d761a37e6b" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askcomrade/settings.py" afterPath="$PROJECT_DIR$/askcomrade/settings.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,8 +37,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/askcomrade/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="62" column="69" lean-forward="false" selection-start-line="62" selection-start-column="69" selection-end-line="62" selection-end-column="69" />
+            <state relative-caret-position="285">
+              <caret line="450" column="0" lean-forward="true" selection-start-line="450" selection-start-column="0" selection-end-line="450" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -88,7 +90,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ACCENT_COLOR</find>
       <find>MUTED_BACKGROUND_BORDER</find>
       <find>True</find>
       <find>UserDetails</find>
@@ -118,6 +119,7 @@
       <find>content</find>
       <find>Vi</find>
       <find>DEBUG</find>
+      <find>EMA</find>
     </findStrings>
     <replaceStrings>
       <replace>messages</replace>
@@ -1314,8 +1316,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/askcomrade/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="62" column="69" lean-forward="false" selection-start-line="62" selection-start-column="69" selection-end-line="62" selection-end-column="69" />
+        <state relative-caret-position="285">
+          <caret line="450" column="0" lean-forward="true" selection-start-line="450" selection-start-column="0" selection-end-line="450" selection-end-column="0" />
           <folding />
         </state>
       </provider>
