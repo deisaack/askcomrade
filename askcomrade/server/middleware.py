@@ -158,61 +158,61 @@ class Visit(MiddlewareMixin):
             messages.error(request, 'Sorry, this account has been suspended. Please contact the administrators.')
 
         # Add attributes to anonymous users.
-        if not user.is_authenticated():
-
-            # This attribute is required inside templates.
-            user.is_moderator = user.is_admin = False
-
-            # Check external logins.
-            if settings.EXTERNAL_AUTH and valid_external_login(request):
-                messages.success(request, "Login completed")
-
-            # We do this to detect when an anonymous session turns into a logged in one.
-            if ANON_USER not in session:
-                session[ANON_USER] = True
-
-        # User attributes that refresh at given intervals.
-        if user.is_authenticated():
-
-            # The time between two count refreshes.
-            elapsed = (const.now() - user.profile.last_login).seconds
-
-            # The user has an anonymous session already.
-            # Update the user login data now.
-            if ANON_USER in session:
-                del session[ANON_USER]
-                elapsed = settings.SESSION_UPDATE_SECONDS + 1
-
-            # The user session will be updated.
-            if elapsed > settings.SESSION_UPDATE_SECONDS:
-                # Set the last login time.
-                Profile.objects.filter(user_id=user.id).update(last_login=const.now())
-
-                # Compute the counts.
-                counts = get_cuonts(request)
-
-                # Store the counts in the session for later use.
-                session[SESSION_KEY] = counts
-
-                # Create user awards if possible.
-                create_user_award.delay(user=user)
-
-                # check user and fill in details
-                check_user_profile.delay(ip=get_ip(request), user=user)
-
-
-        # Get the counts from the session or the cache.
-        counts = session.get(SESSION_KEY) or cache.get(SESSION_KEY)
-
-        # No sessions found, set the them into the session.
-        if not counts:
-            # Compute the counts
-            counts = get_cuonts(request)
-
-            # Put them into the session.
-            session[SESSION_KEY] = counts
-
-            # Store them in the cache for the next anonymous user.
-            cache.set(SESSION_KEY, counts, settings.SESSION_UPDATE_SECONDS)
-
-
+        # if not user.is_authenticated():
+        #
+        #     # This attribute is required inside templates.
+        #     user.is_moderator = user.is_admin = False
+        #
+        #     # Check external logins.
+        #     if settings.EXTERNAL_AUTH and valid_external_login(request):
+        #         messages.success(request, "Login completed")
+        #
+        #     # We do this to detect when an anonymous session turns into a logged in one.
+        #     if ANON_USER not in session:
+        #         session[ANON_USER] = True
+        #
+        # # User attributes that refresh at given intervals.
+        # if user.is_authenticated():
+        #
+        #     # The time between two count refreshes.
+        #     elapsed = (const.now() - user.profile.last_login).seconds
+        #
+        #     # The user has an anonymous session already.
+        #     # Update the user login data now.
+        #     if ANON_USER in session:
+        #         del session[ANON_USER]
+        #         elapsed = settings.SESSION_UPDATE_SECONDS + 1
+        #
+        #     # The user session will be updated.
+        #     if elapsed > settings.SESSION_UPDATE_SECONDS:
+        #         # Set the last login time.
+        #         Profile.objects.filter(user_id=user.id).update(last_login=const.now())
+        #
+        #         # Compute the counts.
+        #         counts = get_cuonts(request)
+        #
+        #         # Store the counts in the session for later use.
+        #         session[SESSION_KEY] = counts
+        #
+        #         # Create user awards if possible.
+        #         create_user_award.delay(user=user)
+        #
+        #         # check user and fill in details
+        #         check_user_profile.delay(ip=get_ip(request), user=user)
+        #
+        #
+        # # Get the counts from the session or the cache.
+        # counts = session.get(SESSION_KEY) or cache.get(SESSION_KEY)
+        #
+        # # No sessions found, set the them into the session.
+        # if not counts:
+        #     # Compute the counts
+        #     counts = get_cuonts(request)
+        #
+        #     # Put them into the session.
+        #     session[SESSION_KEY] = counts
+        #
+        #     # Store them in the cache for the next anonymous user.
+        #     cache.set(SESSION_KEY, counts, settings.SESSION_UPDATE_SECONDS)
+        #
+        # 
