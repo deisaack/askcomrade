@@ -6,8 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="7fb8087c-79be-432c-a9e4-00d761a37e6b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askcomrade/celeryconfig.py" afterPath="$PROJECT_DIR$/askcomrade/celeryconfig.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askcomrade/server/templates/account/login.html" afterPath="$PROJECT_DIR$/askcomrade/server/templates/account/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askcomrade/server/templates/account/signup.html" afterPath="$PROJECT_DIR$/askcomrade/server/templates/account/signup.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askcomrade/server/templates/socialaccount/authentication_error.html" afterPath="$PROJECT_DIR$/askcomrade/server/templates/socialaccount/authentication_error.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askcomrade/server/templates/socialaccount/connections.html" afterPath="$PROJECT_DIR$/askcomrade/server/templates/socialaccount/connections.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askcomrade/server/templates/socialaccount/login_cancelled.html" afterPath="$PROJECT_DIR$/askcomrade/server/templates/socialaccount/login_cancelled.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askcomrade/server/templates/socialaccount/signup.html" afterPath="$PROJECT_DIR$/askcomrade/server/templates/socialaccount/signup.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askcomrade/server/templates/starbase.html" afterPath="$PROJECT_DIR$/askcomrade/server/templates/starbase.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askcomrade/settings.py" afterPath="$PROJECT_DIR$/askcomrade/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,21 +42,83 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/askcomrade/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="62" column="9" lean-forward="false" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+            <state relative-caret-position="165">
+              <caret line="442" column="0" lean-forward="true" selection-start-line="442" selection-start-column="0" selection-end-line="442" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="celeryconfig.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/askcomrade/celeryconfig.py">
+      <file leaf-file-name="middleware.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/askcomrade/server/middleware.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="-559">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/askcomrade/server/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="455">
+              <caret line="758" column="0" lean-forward="true" selection-start-line="758" selection-start-column="0" selection-end-line="758" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#85#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/askcomrade/server/templates/account/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#1440#1447#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signup.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/askcomrade/server/templates/account/signup.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+              <folding>
+                <element signature="e#263#285#0#HTML" expanded="true" />
+                <element signature="e#941#965#0#HTML" expanded="true" />
+                <element signature="e#2295#2302#0#HTML" expanded="true" />
+                <element signature="e#2494#2501#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="provider_list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../3/lib/python3.5/site-packages/allauth/templates/socialaccount/snippets/provider_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="starbase.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/askcomrade/server/templates/starbase.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="80" column="170" lean-forward="false" selection-start-line="80" selection-start-column="170" selection-end-line="80" selection-end-column="170" />
               <folding />
             </state>
           </provider>
@@ -67,11 +135,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>COMMENTED_POST</find>
-      <find>ACCEPTED_POST</find>
-      <find>UNANSWERED_POST</find>
-      <find>DEFAULT_FORUM</find>
-      <find>DEFAULT_JOB</find>
       <find>MUTED_BACKGROUND</find>
       <find>ACCENT_COLOR</find>
       <find>MUTED_BACKGROUND_BORDER</find>
@@ -89,7 +152,6 @@
       <find>MANAGERS</find>
       <find>ADMINS</find>
       <find>send_mail</find>
-      <find>Vi</find>
       <find>email</find>
       <find>inst</find>
       <find>insta</find>
@@ -97,6 +159,12 @@
       <find>debug</find>
       <find>celeryconfig</find>
       <find>MID</find>
+      <find>MIDD</find>
+      <find>facebook</find>
+      <find>ACCOUNT_USERNAME_REQUIRED</find>
+      <find>Vi</find>
+      <find>Bac</find>
+      <find>content</find>
     </findStrings>
     <replaceStrings>
       <replace>messages</replace>
@@ -132,9 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/askcomrade/apps/planet/views.py" />
-        <option value="$PROJECT_DIR$/askcomrade/server/templates/post_list.html" />
-        <option value="$PROJECT_DIR$/askcomrade/apps/posts/auth.py" />
         <option value="$PROJECT_DIR$/askcomrade/apps/users/auth.py" />
         <option value="$PROJECT_DIR$/askcomrade/server/context.py" />
         <option value="$PROJECT_DIR$/askcomrade/server/management/commands/__init__.py" />
@@ -179,9 +244,12 @@
         <option value="$PROJECT_DIR$/askcomrade/server/templates/user_details.html" />
         <option value="$PROJECT_DIR$/askcomrade/server/templates/badge_details.html" />
         <option value="$PROJECT_DIR$/askcomrade/apps/users/models.py" />
-        <option value="$PROJECT_DIR$/askcomrade/server/templates/starbase.html" />
         <option value="$PROJECT_DIR$/askcomrade/server/templates/post_details.html" />
         <option value="$PROJECT_DIR$/askcomrade/celeryconfig.py" />
+        <option value="$PROJECT_DIR$/askcomrade/server/templates/starbase.html" />
+        <option value="$PROJECT_DIR$/askcomrade/server/templates/account/login.html" />
+        <option value="$PROJECT_DIR$/askcomrade/server/templates/socialaccount/snippets/provider_list.html" />
+        <option value="$PROJECT_DIR$/askcomrade/server/templates/account/signup.html" />
         <option value="$PROJECT_DIR$/askcomrade/settings.py" />
       </list>
     </option>
@@ -197,6 +265,9 @@
     <option name="y" value="30" />
     <option name="width" value="1153" />
     <option name="height" value="678" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -239,6 +310,46 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="9" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="9" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="askcomrade" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="9" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="9" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="askcomrade" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -251,21 +362,21 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="settings.editor.splitter.proportion" value="0.27032322" />
-    <property name="SearchEverywhereHistoryKey" value="CE&#9;FILE&#9;file:///home/pkemey/w/5/9/askcomrade/celeryconfig.py&#10;celery&#9;null&#9;null&#10;Jcrop.&#9;FILE&#9;file:///home/pkemey/w/5/9/static/jquery.Jcrop.min.css&#10;set&#9;FILE&#9;file:///home/pkemey/w/5/9/askcomrade/settings.py&#10;search_&#9;FILE&#9;file:///home/pkemey/w/5/9/askcomrade/server/search_indexes.py&#10;base.&#9;FILE&#9;file:///home/pkemey/w/5/9/biostar/server/templates/starbase.html" />
+    <property name="SearchEverywhereHistoryKey" value="provider_list.html&#9;FILE&#9;file:///home/pkemey/w/5/3/lib/python3.5/site-packages/allauth/templates/socialaccount/snippets/provider_list.html&#10;CE&#9;FILE&#9;file:///home/pkemey/w/5/9/askcomrade/celeryconfig.py&#10;celery&#9;null&#9;null&#10;Jcrop.&#9;FILE&#9;file:///home/pkemey/w/5/9/static/jquery.Jcrop.min.css&#10;set&#9;FILE&#9;file:///home/pkemey/w/5/9/askcomrade/settings.py&#10;search_&#9;FILE&#9;file:///home/pkemey/w/5/9/askcomrade/server/search_indexes.py&#10;base.&#9;FILE&#9;file:///home/pkemey/w/5/9/biostar/server/templates/starbase.html" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/askcomrade/server/templates" />
+      <recent name="$PROJECT_DIR$/askcomrade/apps" />
+      <recent name="$PROJECT_DIR$/static" />
+      <recent name="$PROJECT_DIR$/static/hh" />
+      <recent name="$PROJECT_DIR$/biostar/apps/users" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/askcomrade/apps/posts" />
       <recent name="$PROJECT_DIR$/askcomrade/apps" />
       <recent name="$PROJECT_DIR$/static" />
-      <recent name="$PROJECT_DIR$/biostar/apps" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/askcomrade/apps" />
-      <recent name="$PROJECT_DIR$/static" />
-      <recent name="$PROJECT_DIR$/static/hh" />
-      <recent name="$PROJECT_DIR$/biostar/apps/users" />
       <recent name="$PROJECT_DIR$/biostar/apps" />
     </key>
   </component>
@@ -609,34 +720,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/askcomrade/server/context.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/askcomrade/server/feeds.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="167" column="0" lean-forward="true" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/askcomrade/server/management/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/live/export/static/lib/pagedown/Markdown.Editor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="1336" column="24" lean-forward="false" selection-start-line="1336" selection-start-column="24" selection-end-line="1336" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/askcomrade/server/management/commands/delete_database.py" />
     <entry file="file://$PROJECT_DIR$/askcomrade/server/management/commands/askcomrade_pg_dump.py" />
     <entry file="file://$PROJECT_DIR$/askcomrade/server/management/commands/__init__.py">
@@ -657,13 +740,6 @@
     <entry file="file://$PROJECT_DIR$/askcomrade/server/management/commands/import_phpbb.py" />
     <entry file="file://$PROJECT_DIR$/askcomrade/server/management/commands/import_mbox.py" />
     <entry file="file://$PROJECT_DIR$/askcomrade/server/management/commands/import_askcomrade1.py" />
-    <entry file="file://$PROJECT_DIR$/askcomrade/server/middleware.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/askcomrade/server/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -675,6 +751,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="350" column="14" lean-forward="false" selection-start-line="350" selection-start-column="13" selection-end-line="350" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -766,17 +843,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/askcomrade/server/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4275">
-          <caret line="314" column="33" lean-forward="false" selection-start-line="314" selection-start-column="21" selection-end-line="314" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/askcomrade/server/templates/user_details.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2925">
           <caret line="195" column="36" lean-forward="false" selection-start-line="195" selection-start-column="36" selection-end-line="195" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -784,6 +855,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="28" column="81" lean-forward="false" selection-start-line="28" selection-start-column="81" selection-end-line="28" selection-end-column="81" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -791,6 +863,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1395">
           <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#82#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -799,13 +874,6 @@
         <state relative-caret-position="110">
           <caret line="27" column="7" lean-forward="false" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/askcomrade/server/templates/starbase.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="85" lean-forward="true" selection-start-line="16" selection-start-column="85" selection-end-line="16" selection-end-column="85" />
         </state>
       </provider>
     </entry>
@@ -848,6 +916,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="126" column="21" lean-forward="true" selection-start-line="126" selection-start-column="21" selection-end-line="126" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -859,11 +928,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/askcomrade/server/templates/starbase.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="80" column="170" lean-forward="false" selection-start-line="80" selection-start-column="170" selection-end-line="80" selection-end-column="170" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/askcomrade/server/templates/socialaccount/snippets/provider_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="10" lean-forward="false" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../3/lib/python3.5/site-packages/allauth/templates/socialaccount/snippets/provider_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/askcomrade/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="62" column="9" lean-forward="false" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+        <state relative-caret-position="165">
+          <caret line="442" column="0" lean-forward="true" selection-start-line="442" selection-start-column="0" selection-end-line="442" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/askcomrade/server/middleware.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-559">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/askcomrade/server/templates/account/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding>
+            <element signature="e#263#285#0#HTML" expanded="true" />
+            <element signature="e#941#965#0#HTML" expanded="true" />
+            <element signature="e#2295#2302#0#HTML" expanded="true" />
+            <element signature="e#2494#2501#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/askcomrade/server/templates/account/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#1440#1447#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/askcomrade/server/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="758" column="0" lean-forward="true" selection-start-line="758" selection-start-column="0" selection-end-line="758" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#85#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

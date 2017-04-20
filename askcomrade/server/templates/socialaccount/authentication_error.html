@@ -1,16 +1,11 @@
-{% extends "starbase.html" %}
+{% extends "socialaccount/base.html" %}
+
 {% load i18n %}
 
-{% block page_title %}
-    Authentication Error
-{% endblock %}
+{% block head_title %}{% trans "Social Network Login Failure" %}{% endblock %}
 
 {% block content %}
-    <div class="row">
-        <div class="col-md-8 col-md-offset-1">
-            <h1>{% trans "Social Network Login Failure" %}</h1>
+<h1>{% trans "Social Network Login Failure" %}</h1>
 
-            <div class="alert alert-danger">{% trans "An error occurred while attempting to login via your social network account." %}</div>
-        </div>
-    </div>
+<p>{% trans "An error occurred while attempting to login via your social network account." %}</p>
 {% endblock %}

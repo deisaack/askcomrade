@@ -23,10 +23,11 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'allauth.socialaccount.providers.google',
     'allauth.socialaccount.providers.github',
     'allauth.socialaccount.providers.facebook',
-    'allauth.socialaccount.providers.linkedin',
+    # 'allauth.socialaccount.providers.google',
+    'allauth.socialaccount.providers.instagram',
+    'allauth.socialaccount.providers.twitter',
 
     'haystack',
     'crispy_forms',
@@ -354,38 +355,47 @@ MAX_TOP_POSTS_TRUSTED_USER = 5
 SOCIALACCOUNT_ADAPTER = 'askcomrade.server.middleware.AutoSignupAdapter'
 
 # Customize this to match the providers listed in the APPs
-SOCIALACCOUNT_PROVIDERS = {
+SOCIALACCOUNT_PROVIDERS ={
+    'facebook':
+       {'METHOD': 'oauth2',
+        'SCOPE': ['email','public_profile', 'user_friends'],
+        'AUTH_PARAMS': {'auth_type': 'reauthenticate'},
+        'FIELDS': [
+            'id',
+            'email',
+            'name',
+            'first_name',
+            'last_name',
+            'verified',
+            'locale',
+            'timezone',
+            'link',
+            'gender',
+            'updated_time'],
+        'EXCHANGE_TOKEN': True,
+        'LOCALE_FUNC': lambda request: 'kr_KR',
+        'VERIFIED_EMAIL': False,
+        'VERSION': 'v2.4'
+        },
 
-    # 'facebook': {
-    #    'SCOPE': ['email'],
-    #    'AUTH_PARAMS': {'auth_type': 'reauthenticate'},
-    #    'METHOD': 'oauth2',
-    #    'LOCALE_FUNC': lambda x: 'en_US',
-    #    'PROVIDER_KEY': get_env("FACEBOOK_PROVIDER_KEY"),
-    #    'PROVIDER_SECRET_KEY': get_env("FACEBOOK_PROVIDER_SECRET_KEY"),
+    #
+    # 'persona': {
+    #     'REQUEST_PARAMETERS': {'siteName': 'Askcomrade'}
     # },
-
-    'persona': {
-        'REQUEST_PARAMETERS': {'siteName': 'Askcomrade'}
-    },
-
+    #
     # 'github': {
     #    'SCOPE': ['email'],
-    #    'PROVIDER_KEY': get_env("GITHUB_PROVIDER_KEY"),
-    #     'PROVIDER_SECRET_KEY': get_env("GITHUB_PROVIDER_SECRET_KEY"),
+    #    # 'PROVIDER_KEY': get_env("GITHUB_PROVIDER_KEY"),
+    #    #  'PROVIDER_SECRET_KEY': get_env("GITHUB_PROVIDER_SECRET_KEY"),
     #    },
-
+    #
     # 'google': {
     #    'SCOPE': ['email', 'https://www.googleapis.com/auth/userinfo.profile'],
     #    'AUTH_PARAMS': {'access_type': 'online'},
-    #    'PROVIDER_KEY': get_env("GOOGLE_PROVIDER_KEY"),
-    #    'PROVIDER_SECRET_KEY': get_env("GOOGLE_PROVIDER_SECRET_KEY"),
+    #    # 'PROVIDER_KEY': get_env("GOOGLE_PROVIDER_KEY"),
+    #    # 'PROVIDER_SECRET_KEY': get_env("GOOGLE_PROVIDER_SECRET_KEY"),
     # },
 
-    # 'orcid': {
-    #    'PROVIDER_KEY': get_env("ORCID_PROVIDER_KEY"),
-    #    'PROVIDER_SECRET_KEY': get_env("ORCID_PROVIDER_SECRET_KEY"),
-    # },
 }
 
 # The google id will injected as a template variable.
@@ -429,7 +439,7 @@ RECAPTCHA_USE_SSL = True  # Defaults to False
 NOCAPTCHA = True
 
 # Use a mock email backend for development.
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # On deployed servers the following must be set.
 EMAIL_HOST = 'smtp.gmail.com'

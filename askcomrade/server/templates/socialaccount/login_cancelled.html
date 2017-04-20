@@ -1,16 +1,15 @@
+{% extends "socialaccount/base.html" %}
 
-{% extends "starbase.html" %}
 {% load i18n %}
 
-{% block page_title %}
-    Login Cancelled
-{% endblock %}
+{% block head_title %}{% trans "Login Cancelled" %}{% endblock %}
 
 {% block content %}
-    <div class="row">
-        <div class="col-md-8 col-md-offset-1">
-            <h1>{% trans "Social Network Login Cancel" %}</h1>
-            <div class="alert alert-info">{% trans "The login has been cancelled." %}</div>
-        </div>
-    </div>
+
+<h1>{% trans "Login Cancelled" %}</h1>
+
+{% url 'account_login' as login_url %}
+
+<p>{% blocktrans %}You decided to cancel logging in to our site using one of your existing accounts. If this was a mistake, please proceed to <a href="{{login_url}}">sign in</a>.{% endblocktrans %}</p>
+
 {% endblock %}
