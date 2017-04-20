@@ -215,4 +215,4 @@ class Visit(MiddlewareMixin):
         #     # Store them in the cache for the next anonymous user.
         #     cache.set(SESSION_KEY, counts, settings.SESSION_UPDATE_SECONDS)
         #
-        # 
+        #
