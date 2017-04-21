@@ -17,11 +17,8 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse ">
           <ul class="nav navbar-nav">
-            <li><a href="{% url 'home' %}">
-            <i class="fa fa-star fa-1x"></i> Home
-            </a></li>
           {% if user.is_authenticated %}
-
+              <li><a href="{% url 'tag-list' %}"><i class="fa fa-flag">All-Tags</i></a></li>
             <li>
                <a href="{% url 'user-list' %}">
                     <i class="fa fa-globe"></i>
@@ -38,6 +35,7 @@
                     <i class="fa fa-eye"></i>Following
                 </a>
           </li>
+
           {% endif %}
           </ul>
           <ul class="nav navbar-nav navbar-right">
@@ -108,7 +106,7 @@
             </button>
             <ul class="dropdown-menu" role="menu">
                 <li><a href="{% url 'planet' %}">Planet</a></li>
-                <li><a href="{% url 'tag-list' %}">All &raquo;</a></li>
+              <li><a href="{% url 'badge-list' %}"><i class="fa fa-fighter-jet">badge-list</i></a></li>
             </ul>
         </div>
     </div>
