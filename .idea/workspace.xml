@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fb8087c-79be-432c-a9e4-00d761a37e6b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askcomrade/celery.py" afterPath="$PROJECT_DIR$/askcomrade/celery.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askcomrade/celeryconfig.py" afterPath="$PROJECT_DIR$/askcomrade/celeryconfig.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askcomrade/server/middleware.py" afterPath="$PROJECT_DIR$/askcomrade/server/middleware.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/askcomrade/settings.py" afterPath="$PROJECT_DIR$/askcomrade/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,11 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/askcomrade/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="15" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="15" />
+            <state relative-caret-position="345">
+              <caret line="451" column="0" lean-forward="true" selection-start-line="451" selection-start-column="0" selection-end-line="451" selection-end-column="0" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -62,7 +59,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="middleware.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="middleware.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/askcomrade/server/middleware.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="48">
@@ -105,7 +102,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>__DEFAULT_FROM_EMAIL</find>
       <find>DEFAULT_FROM_EMAIL</find>
       <find>MANAGERS</find>
       <find>ADMINS</find>
@@ -130,11 +126,12 @@
       <find>vie</find>
       <find>ssl</find>
       <find>BACKE</find>
-      <find>ce</find>
       <find>app</find>
       <find>CELERY_CONFIG</find>
       <find>app.conf</find>
+      <find>ce</find>
       <find>CELERY</find>
+      <find>True</find>
     </findStrings>
     <replaceStrings>
       <replace>messages</replace>
@@ -219,8 +216,8 @@
         <option value="$PROJECT_DIR$/askcomrade/server/templates/nav.html" />
         <option value="$PROJECT_DIR$/askcomrade/celery.py" />
         <option value="$PROJECT_DIR$/askcomrade/celeryconfig.py" />
-        <option value="$PROJECT_DIR$/askcomrade/settings.py" />
         <option value="$PROJECT_DIR$/askcomrade/server/middleware.py" />
+        <option value="$PROJECT_DIR$/askcomrade/settings.py" />
       </list>
     </option>
   </component>
@@ -951,16 +948,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/askcomrade/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="15" lean-forward="false" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/askcomrade/celeryconfig.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -976,6 +963,16 @@
         <state relative-caret-position="48">
           <caret line="198" column="16" lean-forward="false" selection-start-line="198" selection-start-column="16" selection-end-line="198" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/askcomrade/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="451" column="0" lean-forward="true" selection-start-line="451" selection-start-column="0" selection-end-line="451" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
