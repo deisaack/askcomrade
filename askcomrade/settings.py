@@ -6,7 +6,7 @@ SECRET_KEY = 'hsuw-xuy!ny!81ag(g&4q&h$fjj43paqk$(cx#69b5y_ex*wgk'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','askcomrade.herokuapp.com', '0.0.0.0']
+ALLOWED_HOSTS = ['127.0.0.1','askcomrade.herokuapp.com', '0.0.0.0', 'localhost']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -446,7 +446,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = '587'
 EMAIL_HOST_USER = 'deisaack@gmail.com'
 EMAIL_HOST_PASSWORD = 'jacktonejacktone'
-SECURE_SSL_REDIRECT = True
+# SECURE_SSL_REDIRECT = True
 # SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 DJANGO_SETTINGS_MODULE = 'askcomrade.settings.base'
