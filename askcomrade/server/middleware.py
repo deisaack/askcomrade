@@ -214,5 +214,12 @@ class Visit(MiddlewareMixin):
 
             # Store them in the cache for the next anonymous user.
             cache.set(SESSION_KEY, counts, settings.SESSION_UPDATE_SECONDS)
+from django.http import HttpResponseRedirect
 
+class SSLMiddleware(MiddlewareMixin):
+    def process_request(self, request):
+        if not any([settings.DEBUG, request.is_secure(), request.META.get('HTTP_X_FORWADED_PROTO', '') == 'https']):
+            url = request.build_absolute_uri(request.get_full_path())
+            secure_url = url.replace('http://', 'https://')
+            return HttpResponseRedirect(secure_url)
 
