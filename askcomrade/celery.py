@@ -9,6 +9,9 @@ logger = get_task_logger(__name__)
 
 from celery import Celery
 
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'askcomrade.settings')
+
+
 app = Celery('askcomrade')
 
 # Read the configuration from the config file.

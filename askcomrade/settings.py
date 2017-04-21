@@ -1,4 +1,6 @@
 import os
+import djcelery
+djcelery.setup_loader()
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -45,7 +47,6 @@ INSTALLED_APPS = [
     'askcomrade.server',
     'djcelery',
     'kombu.transport.django',
-    # 'south',
     'captcha',
     'django.contrib.sites',
 ]
@@ -446,8 +447,8 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = '587'
 EMAIL_HOST_USER = 'deisaack@gmail.com'
 EMAIL_HOST_PASSWORD = 'jacktonejacktone'
-SECURE_SSL_REDIRECT = False
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+# SECURE_SSL_REDIRECT = True
+# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # DJANGO_SETTINGS_MODULE = 'askcomrade.settings.base'
 
