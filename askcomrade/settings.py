@@ -439,15 +439,15 @@ RECAPTCHA_PRIVATE_KEY = ""
 RECAPTCHA_USE_SSL = True  # Defaults to False
 NOCAPTCHA = True
 
-# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # On deployed servers the following must be set.
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = '587'
 EMAIL_HOST_USER = 'deisaack@gmail.com'
 EMAIL_HOST_PASSWORD = 'jacktonejacktone'
-SECURE_SSL_REDIRECT = True
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+# SECURE_SSL_REDIRECT = True
+# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # DJANGO_SETTINGS_MODULE = 'askcomrade.settings.base'
 
